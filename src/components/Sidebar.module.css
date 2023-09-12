@@ -1,0 +1,39 @@
+.sidebar {
+    background-color: var(--black-800);
+    border-radius: 8px; /* Angulo de Borda */
+    overflow: hidden; /* Elementos apenas ocupam o tamanho da sidebar. O restante é oculto */
+}
+
+.cover {
+    width: 100%;
+    height: 72px;
+    object-fit: cover; /* Evita que a imagem seja distorcida e faça com que caiba no elemento, mostrando o centro da imagem e cortando o restante */
+}
+
+.profile {
+    display: flex;
+    flex-direction: column; /* Faz os itens estarem um abaixo do outro, como em colunas */
+    align-items: center; /* Alinha os itens do flex-column no centro */
+}
+
+.sidebar footer{
+    border-top: 1px solid var(--black-600);
+    margin-top: 1.5rem; /* Margem do topo, dã... */
+    padding: 1.5rem 2rem 2rem; /* Acima, abaixo e laterais */
+}
+
+.sidebar footer a {
+    background: transparent;
+    color: var(--green-500);
+    border: 1px solid var(--green-500);
+    border-radius: 8px;
+    height: 50px;
+    padding: 0 1.5rem;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

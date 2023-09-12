@@ -1,0 +1,10 @@
+.wrapper {
+    max-width: 70rem; /* Largura máxima do item 70rem = 1120px */
+    margin: 2rem auto; /* Margem superior de 2rem (32px) e nas laterais, automático */
+    padding: 0 1rem; /* Quando o tamanho fica menor que o max-width, ele evita que o conteudo fique colado na tela */
+
+    display: grid;
+    grid-template-columns: 256px 1fr; /* O primeiro item do grid terá 256px fixo e o outro será de 1fr (flexible relative), ajustado ao quanto couber na tela */
+    gap: 2rem; /* Espaçamento entre as colunas do grid */
+    align-items: flex-start; /* Faz com que o alinhamento dos itens fiquem no topo, evitando esticar e fazer com que os elementos tenham o mesmo tamanho */
+}
